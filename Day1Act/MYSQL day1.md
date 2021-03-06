@@ -10,13 +10,13 @@ select Moviename from Movie where Heroname like 'Ayushmann';
 
 Select count(Moviename) from Movie where Length>18;
 
-4. Display the movie having minimum length.
+4.Display the movie having minimum length.
 
 select Moviename from Movie where Length=(select min(Length) from Movie);
 
 5.Display all the details of movie, the language that first name starts with ‘T’
 
-select \* from Movie where Language like 'T%';
+select * from Movie where Language like 'T%';
 
 6.Display the movie name, hero name, heroine name whose having maximum length.
 
@@ -28,7 +28,7 @@ select Moviename,Heroname,Heroinename from Movie where Releaseddate > '2018-03-1
 
 8.Display the count of thriller movies.
 
-`  `select count(Moviename) from Movie where Movietype like '%Thriller%';
+select count(Moviename) from Movie where Movietype like '%Thriller%';
 
 9.Display the count of movies whose released before 15 march 2018.
 
