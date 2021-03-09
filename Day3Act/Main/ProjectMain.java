@@ -81,7 +81,7 @@ public class ProjectMain {
 		    }
 		    else if(u==2)		
 		    {
-		    	System.out.println("Enter Playet ID: ");
+		    	System.out.println("Enter Player ID: ");
 		    	int id=Integer.parseInt(br.readLine());
 		    	System.out.println("Enter new Player Name: ");
 		    	String name=br.readLine();
