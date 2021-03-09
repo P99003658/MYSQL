@@ -61,7 +61,7 @@ public class PlayerDao {
 	public boolean updatePlayer(int id,String name) throws Exception
 	{
 		Connection c= MyConnection.getConnection();
-		PreparedStatement ps= c.prepareStatement("UPDATE player SET playername=? WHERE player_id=?");
+		PreparedStatement ps= c.prepareStatement("UPDATE player SET name=? WHERE player_id=?");
 		ps.setString(1, name);
 		ps.setInt(2, id);
 		System.out.println("Data Updated Succesfully");
